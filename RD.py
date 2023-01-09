@@ -4,7 +4,7 @@ import plotly_express as px
 
 st.title('特定医療費受給者証の所持者数')
 
-master_df = pd.read_excel(r"C:\Users\yshio\Documents\Sandbox\Python\RareDisease\koufu.xlsx", sheet_name=0, index_col=0)
+master_df = pd.read_excel(r"koufu.xlsx", sheet_name=0, index_col=0)
 year_list=master_df['年度'].unique()
 disease_list = master_df['疾患名'].unique()
 
